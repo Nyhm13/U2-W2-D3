@@ -55,6 +55,7 @@ h1 {
   color: $secondary;
 }
 section{
+    background-color: $text-light;
     text-align: center;
     @include grid(4);
 }    
