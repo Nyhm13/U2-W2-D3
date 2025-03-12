@@ -1,0 +1,20 @@
+@mixin cadomalato(
+  $duration: 1s,
+  $from: 0,
+  $to: 1,
+  $delay: 0s,
+  $animation-name: unique-animation
+) {
+  @keyframes #{$animation-name} {
+    0% {
+      opacity: $from;
+      transform: translateY(-200px); // Regola la distanza della discesa
+    }
+    100% {
+      opacity: $to;
+      transform: translateY(0);
+    }
+  }
+
+  animation: $animation-name $duration $delay linear forwards;
+}

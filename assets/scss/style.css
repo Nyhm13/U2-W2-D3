@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+body {
+  width: 100%;
+}
+
+.padding-block-sm {
+  padding-block: 0.5rem;
+}
+
+.margin-block-sm {
+  margin-block: 0.5rem;
+}
+
+.padding-inline-sm {
+  padding-inline: 0.5rem;
+}
+
+.margin-inline-sm {
+  margin-inline: 0.5rem;
+}
+
+.padding-block-normal {
+  padding-block: 1rem;
+}
+
+.margin-block-normal {
+  margin-block: 1rem;
+}
+
+.padding-inline-normal {
+  padding-inline: 1rem;
+}
+
+.margin-inline-normal {
+  margin-inline: 1rem;
+}
+
+.padding-block-md {
+  padding-block: 1.5rem;
+}
+
+.margin-block-md {
+  margin-block: 1.5rem;
+}
+
+.padding-inline-md {
+  padding-inline: 1.5rem;
+}
+
+.margin-inline-md {
+  margin-inline: 1.5rem;
+}
+
+.padding-block-lg {
+  padding-block: 2rem;
+}
+
+.margin-block-lg {
+  margin-block: 2rem;
+}
+
+.padding-inline-lg {
+  padding-inline: 2rem;
+}
+
+.margin-inline-lg {
+  margin-inline: 2rem;
+}
+
+.padding-block-xl {
+  padding-block: 2.5rem;
+}
+
+.margin-block-xl {
+  margin-block: 2.5rem;
+}
+
+.padding-inline-xl {
+  padding-inline: 2.5rem;
+}
+
+.margin-inline-xl {
+  margin-inline: 2.5rem;
+}
+
+.padding-block-xxl {
+  padding-block: 3rem;
+}
+
+.margin-block-xxl {
+  margin-block: 3rem;
+}
+
+.padding-inline-xxl {
+  padding-inline: 3rem;
+}
+
+.margin-inline-xxl {
+  margin-inline: 3rem;
+}
+
+.btn1 {
+  background-color: #0e6cff;
+}
+.btn1:hover {
+  transform: scale(1.2);
+}
+
+.btn2 {
+  background-color: #ff8700;
+}
+.btn2:hover {
+  transform: scale(1.2);
+}
+
+.btn3 {
+  background-color: #4caf50;
+}
+.btn3:hover {
+  transform: scale(1.2);
+}
+
+body {
+  color: rgba(244, 244, 244, 0.9568627451);
+}
+
+header {
+  background-color: #640fc5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header div div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header div p {
+  text-align: center;
+}
+
+main {
+  background-color: rgb(0, 0, 0);
+}
+
+nav {
+  padding: 20px;
+  background-color: rgb(90, 197, 255);
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div img {
+  animation: unique-animation 1s 0.2s linear forwards;
+  border-radius: 30px;
+  box-shadow: 4px 3px 2px black;
+}
+@keyframes unique-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+nav div ul {
+  gap: 170px;
+  justify-content: center;
+  flex-grow: 1;
+  display: flex;
+}
+nav div ul li a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+section > * {
+  width: calc(100% / 4 - 20px);
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

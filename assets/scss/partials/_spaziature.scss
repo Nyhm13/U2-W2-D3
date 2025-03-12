@@ -1,0 +1,42 @@
+body{
+    width: 100%;
+}
+
+// $sizes: (
+//   sm: 0.5rem,
+//   normal: 1rem,
+//   md: 1.5rem,
+//   lg: 2rem,
+//   xl: 2.5rem,
+//   xxl: 3rem
+// );
+
+// @each $name,$value in $sizes{
+//     .p-#{$name} { padding: $value;
+        
+//     }
+// }
+$sizes: (
+  sm: 0.5rem,
+  normal: 1rem,
+  md: 1.5rem,
+  lg: 2rem,
+  xl: 2.5rem,
+  xxl: 3rem
+);
+
+$directions: (
+  block: 'block',
+  inline: 'inline'
+);
+
+@each $size-name, $size-value in $sizes {
+  @each $direction-name, $direction-value in $directions {
+    .padding-#{$direction-value}-#{$size-name} {
+      padding-#{$direction-value}: $size-value;
+    }
+    .margin-#{$direction-value}-#{$size-name} {
+      margin-#{$direction-value}: $size-value;
+    }
+  }
+}

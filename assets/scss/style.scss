@@ -1,0 +1,57 @@
+@import "partials/reset";
+@import "partials/font";
+@import "partials/colors";
+@import "partials/spaziature";
+@import "partials/bottoni";
+@import "partials/mixins";
+@import "partials/animazioni";
+
+body {
+  color: $text-light;
+}
+header {
+  background-color: $bg-hero;
+  @include space-evenly;
+  
+  div{
+    div{
+        @include space-evenly
+    }
+    p{
+        text-align: center;
+    }
+  }
+}
+main {
+  background-color: $secondary;
+}
+nav {
+    padding: 20px;
+    background-color: $primary;
+    div {
+        @include space-between;
+        img {@include cadomalato($duration: 1s,
+            $delay: 0.2s,);
+            @include floating;
+        }
+        ul { gap: 170px;
+            justify-content: center;
+            flex-grow: 1;
+        
+            @include flex;
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+h1 {
+  @include title-big;
+  color: $secondary;
+}
+section{
+    @include grid(4);
+}    
