@@ -29,6 +29,7 @@ nav {
     padding: 20px;
     background-color: $primary;
     div {
+        
         @include space-between;
         img {@include cadomalato($duration: 1s,
             $delay: 0.2s,);
@@ -41,6 +42,7 @@ nav {
             @include flex;
             li {
                 a {
+                    font-size: $size-lg;
                     text-decoration: none;
                 }
             }
@@ -53,5 +55,6 @@ h1 {
   color: $secondary;
 }
 section{
+    text-align: center;
     @include grid(4);
 }    
